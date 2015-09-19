@@ -14,12 +14,12 @@ var gulpfileGenerator = module.exports = generators.Base.extend({
     self.prompt([{
       type: 'value',
       name: 'src',
-      message: 'What is your relative path for your angular application (ngAnnotate) ?',
+      message: 'What is the relative path to your angular application (ngAnnotate)?',
       default: './app'
     }, {
       type: 'value',
       name: 'dist',
-      message: 'What is your relative path for your angular application in production (ngAnnotate) ?',
+      message: 'What is the relative path to your angular application ready for production (ngAnnotate)?',
       default: './dist'
     }], function (answers) {
       _.assign(self.vars, answers);

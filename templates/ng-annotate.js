@@ -8,5 +8,6 @@ gulp.task('ng-annotate', function () {
 });
 
 gulp.task('ng-annotate:watch', function () {
+  gulp.start('ng-annotate');
   gulp.watch('<=% src %>/**/*.js', ['ng-annotate']);
 });
